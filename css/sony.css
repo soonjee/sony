@@ -1,0 +1,16 @@
+.Wrap {}
+
+.header {
+    background: #000;
+    line-height: 35px;
+}
+
+.header .container {
+    width: 1700px;
+    margin: 0 auto;
+}
+
+.header .container img {
+    width: 163px;
+    height: 30px;
+}
