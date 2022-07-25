@@ -8,7 +8,8 @@
 
 .header .container {
     display: flex;
-    width: 1700px;
+    width: 1500px;
+    padding: 5px 0;
     margin: 0 auto;
     align-items: center;
 }
@@ -26,18 +27,95 @@
 .header .notice_slider .info p {margin-right: 170px;}
 .header .notice_slider .info span { padding-right: 16px;}
 
-.header .gnb {display: block;}
-.header .container .gnb>ul {display: flex;}
-.header .gnb .mopen {display:block;}
+.header .gnb { display: block;}
+.header .container .gnb>ul { display: flex; }
+.header .gnb .mopen { display:block; }
 
 
-.main {
-    padding: 150px 0;
-    height: 680px;
-    background: #fff;
-    border-bottom: 1px solid #999;
-}
+.main { padding: 100px 0; }
 
 .main_visual {
+    display: flex;
+    width: 1500px;
     margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main_visual .slogan { padding-right: 200px; }
+.main_visual .slogan span { display: inline-block; }
+
+.main_visual .slogan span:nth-child(1) {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.main_visual .slogan h2 {
+    font-size: 69px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.main_visual .slogan span:nth-child(n+2):nth-child(-n+5) {
+    display: inline-block;
+    padding-right: 30px;
+    margin-bottom: 50px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #6666ff;
+}
+.main_visual .slogan p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.main_visual .img_box img { width: 500px;}
+
+
+.new { background: #ece8df;}
+
+.new .bg_product {
+    display: flex;
+    width: 1500px;
+    margin: 0 auto;
+    flex-direction: column
+}
+
+.new .bg_product .basic_slider {
+    position: absolute;
+    width: 600px;
+    padding: 80px 0;
+}
+
+.new .bg_product .basic_slider img {
+    max-width: 100%;
+}   
+
+.new .bg_product .bg_info {
+    padding: 140px 0 130px 0;
+    text-align: right;
+}
+
+.new .bg_info h3 {
+    font-size: 51px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.new .bg_info span {
+    display: block;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.new .bg_info strong {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 55px;
+}
+.new .bg_info p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
 }
