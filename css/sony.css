@@ -71,7 +71,6 @@
 
 .main_visual .img_box img { width: 500px;}
 
-
 .new { background: #ece8df;}
 
 .new .bg_product {
@@ -92,7 +91,7 @@
 }   
 
 .new .bg_product .bg_info {
-    padding: 140px 0 130px 0;
+    padding: 140px 70px 130px 0;
     text-align: right;
 }
 
@@ -142,7 +141,7 @@
 }   
 
 .color .bk_product .bk_info {
-    padding: 140px 0 130px 0;
+    padding: 200px 0 170px 70px;
     color: #fff;
 }
 .color .bk_info span {
@@ -154,7 +153,7 @@
 .color .bk_info h4 {
     font-size: 45px;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: 55px;
 }
 .color .bk_info strong {
@@ -167,9 +166,59 @@
 .color .bk_info p {
     font-size: 15px;
     font-weight: 300;
+    margin-bottom: 50px;
     line-height: 22px;
 }
 
-.color .bk_info .bk_buy {
-    
+.color .bk_info .bk_buy a{
+    padding: 15px 55px;
+    font-size: 13px;
+    font-weight: 400;
+    border: 2px solid #6666ff;
+}
+
+.sonyStore {
+    background: #f7f7f7;
+    padding: 200px 0;
+}
+
+.sonyStore .container {
+    display: flex;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.sonyStore .container .left {
+    width: 50%;
+    overflow: hidden;
+}
+
+.sonyStore .container .right {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    cursor: url(/img/arrow_r.1db549d7.cur),pointer;
+    padding-left: 100px;
+}
+
+.sonyStore .container .right .right_slider {
+    width: 120%;
+}
+
+.sonyStore .container .right figure {
+    padding: 0 30px 0 0;
+}
+
+.l_arrow i {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 100px;
+    z-index: 999;
+}
+
+.l_arrow h3 {
+    padding: 80px 0;
+    font-size: 69px;
+    font-weight: 700;
 }
