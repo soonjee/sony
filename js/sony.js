@@ -9,7 +9,13 @@ $(function () {
     $('.basic_slider').slick({
         arrows: false,
         autoplay: true,
-        speed: 2000,
-        fade:true,
+        speed: 3000,
+        fade: true,
+    });
+    $('.black_slider').slick({
+        arrows: false,
+        autoplay: true,
+        speed: 3000,
+        fade: true,
     });
 })
