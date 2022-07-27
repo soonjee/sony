@@ -189,36 +189,50 @@
 }
 
 .sonyStore .container .left {
-    width: 50%;
+    width: 80%;
     overflow: hidden;
 }
 
 .sonyStore .container .right {
     position: relative;
-    width: 70%;
+    width: 100%;
+    padding: 70px 0;
     overflow: hidden;
     cursor: url(/img/arrow_r.1db549d7.cur),pointer;
-    padding-left: 100px;
-}
-
-.sonyStore .container .right .right_slider {
-    width: 120%;
+    padding-left: 80px;
 }
 
 .sonyStore .container .right figure {
-    padding: 0 30px 0 0;
+    margin-bottom: 30px;
 }
 
 .l_arrow i {
     width: 100%;
     height: 100%;
     position: absolute;
-    font-size: 100px;
+    font-size: 0;
     z-index: 999;
 }
 
 .l_arrow h3 {
-    padding: 80px 0;
-    font-size: 69px;
+    font-size: 51px;
     font-weight: 700;
 }
+
+
+.right .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin: 0 auto;
+    background: #ddd;
+    overflow: hidden;
+  }
+  .right .bar span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background:  #6666ff;
+    transition: 0.4s;
+  }
