@@ -24,7 +24,7 @@
     top: 60px;
     left: 50%;
     z-index: 999;
-    width: 120px;
+    width: 150px;
     line-height: 40px;
     transform: translateX(-50%);
     text-align: center;
@@ -33,10 +33,7 @@
     font-size: 16px;
     font-weight: 300;;
 }
-
 .header .gnb>ul>li:hover ul { display: block; }
-
-
 .icon i {
     margin-right: 20px;
     font-size: 21px;
@@ -54,7 +51,6 @@
 }
 
 .header .container img {width: 100px;}
-
 .header .noticeSlider {
     width: 500px;
     margin: 0 auto;
@@ -158,10 +154,6 @@
 .new .blackSlider {
     width: 620px;
 }
-
-.new .blackSlider img {
-
-}   
 
 .new .bkProduct .bkInfo {
     text-align: right;
