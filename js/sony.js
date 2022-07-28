@@ -8,10 +8,24 @@ $(function () {
 
     $('.basicSlider').slick({
         arrows: false,
-        autoplay: true,
+        // autoplay: true,
         speed: 3000,
         fade: true,
+        dots:true,
+        customPaging: function (slider, i, src) {
+            var thumb = $(slider.$slides[i]).data();
+            src = i + 1;
+            if (i == "0") {
+              i = "아";
+            } else if (i == "1") {
+              i = "야";
+            } else if (i == "2") {
+              i = "야";
+            }
+            return '<a class = "dot">' +i+ '<a>';
+        },
     });
+    
 
     $('.blackSlider').slick({
         arrows: false,

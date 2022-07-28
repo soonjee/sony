@@ -1,20 +1,59 @@
 .Wrap { }
 
 .header {
-    position: relative;
+    line-height: 60px;
     background: #000;
-    color: #fff;
 }
 
 .header .container {
     display: flex;
-    width: 1400px;
-    padding: 5px 0;
+    width: 1450px;
     margin: 0 auto;
     align-items: center;
+    color: #fff;
+
 }
 
-.header .container img {width: 163px; height: 30px;}
+.header .gnb { margin: 0 auto;}
+.header .gnb>ul { display: flex; font-size: 19px; font-weight: 500;}
+.header .gnb>ul>li { position: relative; padding: 0 25px; }
+.header .gnb>ul>li a { display: block; padding: 0 25px; }
+.header .gnb>ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    z-index: 999;
+    width: 120px;
+    line-height: 40px;
+    transform: translateX(-50%);
+    text-align: center;
+
+    background: #000;
+    font-size: 16px;
+    font-weight: 300;;
+}
+
+.header .gnb>ul>li:hover ul { display: block; }
+
+
+.icon i {
+    margin-right: 20px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.mbtn {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    background: #f7f7f7;
+    padding: 5px;
+    line-height: 1;
+}
+
+.header .container img {width: 100px;}
 
 .header .noticeSlider {
     width: 500px;
@@ -27,14 +66,8 @@
 .header .noticeSlider .info p {margin-right: 170px;}
 .header .noticeSlider .info span { padding-right: 16px;}
 
-.header .gnb { display: block; margin-right: 40px;}
-.header .gnb>ul { display: flex; }
-.gnb>ul>li:nth-child(1){ margin-right: 40px;}
-.gnb .mopen { display:block; }
-
-
 .main {}
-.mainVisual { position: relative; width: 1500px; margin: 0 auto;}
+.mainVisual { position: relative; width: 100%; margin: 0 auto;}
 .mainVisual img {
     width: 100%;
     height:100%;
@@ -50,7 +83,6 @@
     text-align: center;
     color: #fff;
     transition: all 0.8s;
-    /* filter: drop-shadow(2px 2px 6px #333); */
 }
 
 .slogan h2 {
@@ -66,22 +98,27 @@
 
 .new {
     position: relative;
+    padding: 100px 0;
 }
 
 .new .bgProduct {
     display: flex;
-    width: 1400px;
+    width: 1450px;
     margin: 0 auto;
-    padding: 100px 0;
-    justify-content: space-between;
+    justify-content: space-around
 }
 
 .new .basicSlider {
-    width: 750px;
+    width: 620px;
 }
+
+.new .basicSlider img {
+    max-width: 100%;
+}  
 
 .new .bgInfo {
     text-align: left;
+    padding: 100px 0;
 }
 
 .new .bgInfo h3 {
@@ -109,28 +146,26 @@
     font-weight: 300;
     line-height: 20px;
 }
+
+
 .new .bkProduct{
     display: flex;
-    width: 1400px;
+    width: 1450px;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around
 }
 
-.new .bkProduct .blackSlider {
-    position: absolute;
-    top: 50%;
-    height: 50%;
-    width: 750px;
-    margin-left: 50px;
+.new .blackSlider {
+    width: 620px;
 }
 
-.new .bkProduct .blackSlider img {
-    max-width: 100%;
+.new .blackSlider img {
+
 }   
 
 .new .bkProduct .bkInfo {
-
     text-align: right;
+    padding: 100px 0;
 }
 .new .bkInfo span {
     display: block;
@@ -140,7 +175,7 @@
 }
 .new .bkInfo h4 {
     font-size: 45px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 20px;
     line-height: 55px;
 }
@@ -160,14 +195,12 @@
 
 .new .bkInfo .bkBuy a{
     padding: 12px 50px;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
     border: 2px solid #6666ff;
 }
 
-.sonyStore {
-    padding: 0 0 100px 0;
-}
+.sonyStore {padding: 0 0 100px 0;}
 
 .sonyStore .container {
     display: flex;
