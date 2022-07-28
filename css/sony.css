@@ -1,4 +1,4 @@
-.Wrap {}
+.Wrap { }
 
 .header {
     position: relative;
@@ -8,178 +8,165 @@
 
 .header .container {
     display: flex;
-    width: 1500px;
-    padding: 12px 0;
+    width: 1400px;
+    padding: 5px 0;
     margin: 0 auto;
     align-items: center;
 }
 
 .header .container img {width: 163px; height: 30px;}
 
-.header .notice_slider {
+.header .noticeSlider {
     width: 500px;
     margin: 0 auto;
     padding-bottom: 5px;
     border-bottom: 1px solid #fff;
 }
 
-.header .notice_slider .info {display: flex;}
-.header .notice_slider .info p {margin-right: 170px;}
-.header .notice_slider .info span { padding-right: 16px;}
+.header .noticeSlider .info {display: flex;}
+.header .noticeSlider .info p {margin-right: 170px;}
+.header .noticeSlider .info span { padding-right: 16px;}
 
-.header .gnb { display: block;}
-.header .container .gnb>ul { display: flex; }
-.header .gnb .mopen { display:block; }
+.header .gnb { display: block; margin-right: 40px;}
+.header .gnb>ul { display: flex; }
+.gnb>ul>li:nth-child(1){ margin-right: 40px;}
+.gnb .mopen { display:block; }
 
 
-.main { padding: 100px 0; }
+.main {}
+.mainVisual { position: relative; width: 1500px; margin: 0 auto;}
+.mainVisual img {
+    width: 100%;
+    height:100%;
+    filter: brightness(0.5);}
 
-.main_visual {
-    display: flex;
-    width: 1500px;
-    margin: 0 auto;
-    justify-content: flex-start;
-    align-items: center;
-}
-.main_visual .slogan { padding-right: 200px; }
-.main_visual .slogan span { display: inline-block; }
-
-.main_visual .slogan span:nth-child(1) {
-    font-size: 17px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-.main_visual .slogan h2 {
-    font-size: 69px;
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-.main_visual .slogan span:nth-child(n+2):nth-child(-n+5) {
-    display: inline-block;
-    padding-right: 30px;
-    margin-bottom: 50px;
-    font-size: 19px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: #6666ff;
-}
-.main_visual .slogan p {
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 22px;
-}
-
-.main_visual .img_box img { width: 500px;}
-
-.new { background: #ece8df;}
-
-.new .bg_product {
-    display: flex;
-    width: 1500px;
-    margin: 0 auto;
-    flex-direction: column;
-}
-
-.new .bg_product .basic_slider {
+.mainVisual .slogan {
     position: absolute;
-    width: 600px;
-    padding: 80px 0;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-10%);
+
+    text-align: center;
+    color: #fff;
+    transition: all 0.8s;
+    /* filter: drop-shadow(2px 2px 6px #333); */
 }
 
-.new .bg_product .basic_slider img {
+.slogan h2 {
+    font-size: 91px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.slogan p {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.new {
+    position: relative;
+}
+
+.new .bgProduct {
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    padding: 100px 0;
+    justify-content: space-between;
+}
+
+.new .basicSlider {
+    width: 750px;
+}
+
+.new .bgInfo {
+    text-align: left;
+}
+
+.new .bgInfo h3 {
+    font-size: 49px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.new .bgInfo span {
+    display: block;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color:  #6666ff;
+}
+.new .bgInfo strong {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 55px;
+    letter-spacing: -1px;
+}
+.new .bgInfo p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.new .bkProduct{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.new .bkProduct .blackSlider {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    width: 750px;
+    margin-left: 50px;
+}
+
+.new .bkProduct .blackSlider img {
     max-width: 100%;
 }   
 
-.new .bg_product .bg_info {
-    padding: 140px 70px 130px 0;
+.new .bkProduct .bkInfo {
+
     text-align: right;
 }
-
-.new .bg_info h3 {
-    font-size: 51px;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-.new .bg_info span {
+.new .bkInfo span {
     display: block;
     font-size: 19px;
-    font-weight: 400;
-    margin-bottom: 40px;
+    font-weight: 500;
+    margin-bottom: 15px;
 }
-.new .bg_info strong {
+.new .bkInfo h4 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 55px;
+}
+.new .bkInfo strong {
     display: inline-block;
     font-size: 45px;
     font-weight: 400;
     margin-bottom: 30px;
     line-height: 55px;
 }
-.new .bg_info p {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 22px;
-}
-
-.color { background: #333;}
-
-.color .bk_product{
-    position: relative;
-    display: flex;
-    width: 1500px;
-    margin: 0 auto;
-    flex-direction: column;
-}
-
-.color .bk_product .black_slider {
-    position: absolute;
-    width: 600px;
-    padding: 80px 0;
-    right: 0;
-}
-
-.color .bk_product .black_slider img {
-    max-width: 100%;
-}   
-
-.color .bk_product .bk_info {
-    padding: 200px 0 170px 70px;
-    color: #fff;
-}
-.color .bk_info span {
-    display: block;
-    font-size: 19px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
-.color .bk_info h4 {
-    font-size: 45px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    line-height: 55px;
-}
-.color .bk_info strong {
-    display: inline-block;
-    font-size: 45px;
-    font-weight: 400;
-    margin-bottom: 30px;
-    line-height: 55px;
-}
-.color .bk_info p {
+.new .bkInfo p {
     font-size: 15px;
     font-weight: 300;
     margin-bottom: 50px;
     line-height: 22px;
 }
 
-.color .bk_info .bk_buy a{
-    padding: 15px 55px;
-    font-size: 13px;
+.new .bkInfo .bkBuy a{
+    padding: 12px 50px;
+    font-size: 11px;
     font-weight: 400;
     border: 2px solid #6666ff;
 }
 
 .sonyStore {
-    background: #f7f7f7;
-    padding: 200px 0;
+    padding: 0 0 100px 0;
 }
 
 .sonyStore .container {
@@ -188,22 +175,34 @@
     margin: 0 auto;
 }
 
-.sonyStore .container .left {
+.sonyStore .left {
     width: 80%;
     overflow: hidden;
 }
 
-.sonyStore .container .right {
+.sonyStore .right {
     position: relative;
     width: 100%;
-    padding: 70px 0;
+    padding: 100px 0;
     overflow: hidden;
     cursor: url(/img/arrow_r.1db549d7.cur),pointer;
     padding-left: 80px;
 }
 
-.sonyStore .container .right figure {
+.sonyStore .right figure {
     margin-bottom: 30px;
+}
+
+.sonyStore .rightSlider strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.sonyStore .rightSlider span {
+    font-size: 13px;
+    font-weight: 300;
 }
 
 .l_arrow i {
@@ -218,7 +217,6 @@
     font-size: 51px;
     font-weight: 700;
 }
-
 
 .right .bar {
     position: relative;
@@ -235,4 +233,15 @@
     height: 100%;
     background:  #6666ff;
     transition: 0.4s;
+  }
+
+
+  .footer {
+    padding: 100px 0;
+    background-color: #000;
+  }
+
+  .footer .container {
+    width: 1400px;
+    margin: 0 auto;
   }
