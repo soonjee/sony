@@ -281,7 +281,7 @@
     border: 2px solid #6666ff;
 }
 
-.sonyStore { padding: 0 0 100px 0; }
+.sonyStore { padding: 0 0 500px 0; }
 
 .sonyStore .container {
     display: flex;
@@ -301,7 +301,6 @@
 }
 
 .sonyStore .right figure { margin-bottom: 30px; }
-
 .sonyStore .rightSlider strong {
     display: block;
     font-size: 15px;
@@ -352,7 +351,6 @@
 }
 
 .footer .container {
-    width: 1400px;
     margin: 0 auto;
 }
 
@@ -453,16 +451,15 @@
     margin: 0 auto;
     }
 
-    .sonyStore .left {width: 80%; overflow: hidden; }
-    .sonyStore .right {
-    position: relative;
-    width: 100%;
-    padding: 100px 0;
-    overflow: hidden;
-    cursor: url(./img/arrow_r.1db549d7.cur),pointer;
-    padding-left: 80px;
+    .sonyStore .left {
+        position: relative;
     }
 
-    .sonyStore .right figure { margin-bottom: 30px; }
+    .sonyStore .left img {
+        width:100%;
+        height:100vh;
+        object-fit: cover;
+    }
 
+    
 };
