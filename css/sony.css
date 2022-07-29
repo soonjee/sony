@@ -89,6 +89,38 @@
     line-height: 24px;
 }
 
+.mainVisual .wheel {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    font-size: 0;
+}
+
+.mainVisual .wheel span {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 12px;
+    background: #fff;
+    border-radius: 1px;
+    animation: wheel 0.5s infinite;
+}
+
+@keyframes wheel {
+    to {
+        top: 15px;
+    }
+}
+
+
 .new { position: relative; padding: 100px 0; }
 .new .bgProduct {
     display: flex;
@@ -134,14 +166,7 @@
     justify-content: space-around
 }
 
-.new .blackSlider {
-    width: 620px;
-}
-
-/*  */
-.back {
-
-}
+.new .blackSlider {width: 620px;}
 
 .button_base {
     margin: 0;
@@ -233,19 +258,6 @@
     -moz-transform: rotateX(-90deg);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*  */
 
 .new .bkProduct .bkInfo { text-align: right; padding: 100px 0; }
 .new .bkInfo span {
