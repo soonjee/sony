@@ -21,29 +21,17 @@ $(function () {
 
     $('.basicSlider').slick({
         arrows: false,
-        // autoplay: true,
-        speed: 3000,
+        autoplay: true,
+        speed: 2000,
         fade: true,
         dots: false,
-        // customPaging: function (slider, i, src) {
-        //     var thumb = $(slider.$slides[i]).data();
-        //     src = i + 1;
-        //     if (i == "0") {
-        //         i = "아";
-        //     } else if (i == "1") {
-        //         i = "야";
-        //     } else if (i == "2") {
-        //         i = "야";
-        //     }
-        //     return '<a class = "dot">' + i + '<a>';
-        // },
     });
 
 
     $('.blackSlider').slick({
         arrows: false,
         autoplay: true,
-        speed: 3000,
+        speed: 2000,
         fade: true,
     });
 
@@ -56,7 +44,7 @@ $(function () {
         arrows: false,
         slidesToShow: 2,
         slidesToScroll: 1,
-        asNavFor: '.left_slider',
+        asNavFor: '.leftSlider',
     });
 
     $('.rightSlider').on('afterChange', function (e, s, c) {
