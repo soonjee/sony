@@ -296,7 +296,7 @@
     width: 100%;
     padding: 100px 0;
     overflow: hidden;
-    cursor: url(./img/arrow_r.1db549d7.cur),pointer;
+    cursor: url(../img/arrow_r.1db549d7.cur),pointer;
     padding-left: 80px;
 }
 
@@ -459,7 +459,7 @@
     width: 100%;
     padding: 100px 0;
     overflow: hidden;
-    cursor: url(/img/arrow_r.1db549d7.cur),pointer;
+    cursor: url(./img/arrow_r.1db549d7.cur),pointer;
     padding-left: 80px;
     }
 
