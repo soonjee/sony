@@ -1,5 +1,5 @@
-$(function () {
 
+$(function () {
     $('.headerSlider').slick({
         arrows: false,
         autoplay: true,
@@ -18,6 +18,7 @@ $(function () {
         $(this).toggleClass('is-active')
         $('.gnb').toggleClass('on')
     });
+
 
     $('.basicSlider').slick({
         arrows: false,

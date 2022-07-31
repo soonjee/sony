@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="./css/sony.css">
 </head>
 <style>
-
+* {
+    outline: 1px solid #f00;
+}
 </style>
 
 <body>
@@ -51,7 +53,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="">제품</a>
+                            <a class="menu" href="">제품</a>
                             <ul class="smenu">
                                 <li><a href="">카메라</a></li>
                                 <li><a href="">비디오 카메라</a></li>
@@ -103,8 +105,10 @@
             </div>
         </header>
         <!-- 헤더 끝 -->
+
         <!-- 메인 -->
         <main class="main">
+            <!-- 메인비주얼 -->
             <div class="mainVisual">
                 <figure class="img_box">
                     <img src="./img/mainpage.jpg" alt="">
@@ -119,126 +123,148 @@
                     <span>위아래로가기</span>
                 </a>
             </div>
-        </main>
-        <!-- 섹션01-->
-        <section class="new">
-            <div class="bgProduct">
-                <div class="bgInfo">
-                    <h3>All New Design</h3>
-                    <span>WH-1000XM5</span>
-                    <strong>
+             <!-- 섹션 new -->
+            <section class="new">
+                <div class="bgProduct">
+                    <div class="bgInfo">
+                        <h3>All New Design</h3>
+                        <span>WH-1000XM5</span>
+                         <strong>
                         더 감미롭고, 더 풍성해진 <br />
                         진정한 프리미엄 사운드
-                    </strong>
-                    <p>
+                         </strong>
+                        <p>
                         빈틈 없이 꼭 맞는 착용감과 오픈이어 스타일로 뛰어난 통화 성능과 음질을<br />
                         선사하는 LinkBuds가 어떻게 사용자가 매일 듣는 음악을 제어
-                    </p>
+                         </p>
+                    </div>
+                    <div class="basicSlider">
+                        <figure>
+                            <img src="./img/basic01.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/basic02.png" alt="">
+                        </figure>
+                    </div>
                 </div>
-                <div class="basicSlider">
-                    <figure>
-                        <img src="./img/basic01.png" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/basic02.png" alt="">
-                    </figure>
-                </div>
-            </div>
-            <div class="bkProduct">
-                <div class="blackSlider">
-                    <figure>
-                        <img src="./img/black01.png" alt="">
-                    </figure>
-                    <figure>
-                        <img src="./img/black02.png" alt="">
-                    </figure>
-                </div>
-                <div class="bkInfo">
-                    <span>플래티넘 실버/블랙</span>
-                    <h4>PLATINUM SILVER</h4>
-                    <p>
-                        빈틈없이 꼭 맞는 착용감과 오픈이어 스타일로 뛰어난 통화 성능과 음질을<br />
-                        선사하는 LinkBuds가 어떻게 사용자가 매일 듣는 음악을 제어
-                    </p>
-                    <div class="back">
-                        <div class="button_base b05_3d_roll">
-                            <div>All New Design</div>
-                            <div>SONY 제품 보러가기</div>
+                <div class="bkProduct">
+                    <div class="blackSlider">
+                        <figure>
+                            <img src="./img/black01.png" alt="">
+                        </figure>
+                        <figure>
+                            <img src="./img/black02.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="bkInfo">
+                        <span>플래티넘 실버/블랙</span>
+                        <h4>PLATINUM SILVER</h4>
+                        <p>
+                            빈틈없이 꼭 맞는 착용감과 오픈이어 스타일로 뛰어난 통화 성능과 음질을<br />
+                            선사하는 LinkBuds가 어떻게 사용자가 매일 듣는 음악을 제어
+                        </p>
+                        <div class="back">
+                            <div class="button_base b05_3d_roll">
+                                <div>All New Design</div>
+                                <div>SONY 제품 보러가기</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- 섹션02 -->
-        <section class="color">
-
-        </section>
-        <!-- 섹션03 -->
-        <section class="sonyStore">
-            <div class="container">
-                <div class="left">
-                    <div class="leftSlider">
-                        <figure>
-                            <img src="./img/Lstore01.jpg" alt="">
-                        </figure>
-                        <figure>
-                            <img src="./img/Lstore02.jpg" alt="">
-                        </figure>
-                        <figure>
-                            <img src="./img/Lstore03.png" alt="">
-                        </figure>
-                        <figure>
-                            <img src="./img/Lstore04.jpg" alt="">
-                        </figure>
+            </section>
+            <!-- 섹션 sonyStore -->
+            <section class="sonyStore">
+                <div class="container">
+                    <div class="left">
+                        <div class="leftSlider">
+                            <figure>
+                                <img src="./img/Lstore01.jpg" alt="">
+                            </figure>
+                            <figure>
+                                <img src="./img/Lstore02.jpg" alt="">
+                            </figure>
+                            <figure>
+                                <img src="./img/Lstore03.png" alt="">
+                            </figure>
+                            <figure>
+                                <img src="./img/Lstore04.jpg" alt="">
+                            </figure>
+                        </div>
                     </div>
+                    <div class="right">
+                        <div class="l_arrow">
+                            <h3>Sony Store</h3>
+                            <i class="xi-arrow-left"></i>
+                            <i class="xi-arrow-right"></i>
+                        </div>
+                        <div class="rightSlider">
+                            <figure>
+                                <img src="./img/store01.png" alt="">
+                                <strong>LinkBuds S</strong>
+                                <span>편안하게 몰입하다, 링크버즈 S</span>
+                            </figure>
+                            <figure>
+                                <img src="./img/store02.png" alt="">
+                                <strong>WH-1000XM5</strong>
+                                <span>All New Design</span>
+                            </figure>
+                            <figure>
+                                <img src="./img/store03.png" alt="">
+                                <strong>ILCE-7M4</strong>
+                                <span>The Camera</span>
+                            </figure>
+                            <figure>
+                                <img src="./img/store04.png" alt="">
+                                <strong>LinkBuds</strong>
+                                <span>벗지 않는 편안함, 링크버즈</span>
+                            </figure>
+                        </div>
+                        <div class="bar">
+                            <span></span>
+                        </div>
+                     </div>
+                 </div>
+            </section>
+            <!-- 섹션 Product -->
+            <section class="product">
+                <div class="container">
+                    <h3>Product</h3>
+                    <ul class="item">
+                        <figure class="camera">
+                            <a href=""><img src="./img/product01.png" alt="">Camera</a>
+                        </figure>
+                        <figure class="videoCamera">
+                            <a href=""><img src="./img/product02.png" alt="">Video Camera</a>
+                        </figure>
+                        <figure class="audio">
+                            <a href=""><img src="./img/product03.png" alt="">Audio</a>
+                        </figure>
+                        <figure class="playtation">
+                            <a href=""><img src="./img/product04.png" alt="">Play Station®</a>
+                        </figure>
+                    </ul>
                 </div>
-                <div class="right">
-                    <div class="l_arrow">
-                        <h3>Sony Store</h3>
-                        <i class="xi-arrow-left"></i>
-                        <i class="xi-arrow-right"></i>
-                    </div>
-                    <div class="rightSlider">
-                        <figure>
-                            <img src="./img/store01.png" alt="">
-                            <strong>LinkBuds S</strong>
-                            <span>편안하게 몰입하다, 링크버즈 S</span>
-                        </figure>
-                        <figure>
-                            <img src="./img/store02.png" alt="">
-                            <strong>WH-1000XM5</strong>
-                            <span>All New Design</span>
-                        </figure>
-                        <figure>
-                            <img src="./img/store03.png" alt="">
-                            <strong>ILCE-7M4</strong>
-                            <span>The Camera</span>
-                        </figure>
-                        <figure>
-                            <img src="./img/store04.png" alt="">
-                            <strong>LinkBuds</strong>
-                            <span>벗지 않는 편안함, 링크버즈</span>
-                        </figure>
-                    </div>
-                    <div class="bar">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- 메인 끝 -->
+            </section>
+        </main>
+        
 
         <footer class="footer">
             <div class="container">
+                <figure>
+                    <img src="./img/teacherSorry.png" alt="">
+                </figure>
             </div>
-
         </footer>
+
+</footer>
+                
     </div>
 
 
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/easy-scroll.js"></script>
     <script src="js/sony.js"></script>
 </body>
 
