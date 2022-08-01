@@ -1,9 +1,8 @@
-.Wrap { }
-
 .header { line-height: 60px; background: #000; }
 .header .container {
     display: flex;
-    width: 1450px;
+    max-width: 1420px;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
     color: #fff;
@@ -45,17 +44,6 @@
 }
 
 .header .container img {width: 100px;}
-.header .noticeSlider {
-    width: 500px;
-    margin: 0 auto;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #fff;
-}
-
-.header .noticeSlider .info {display: flex;}
-.header .noticeSlider .info p {margin-right: 170px;}
-.header .noticeSlider .info span { padding-right: 16px;}
-
 
 .mainVisual { position: relative; width: 100%; margin: 0 auto;}
 
@@ -124,12 +112,13 @@
 .new { position: relative; padding: 100px 0;}
 .new .bgProduct {
     display: flex;
-    width: 1450px;
+    max-width: 1450px;
+    width: 100%;
     margin: 0 auto;
     justify-content: space-around
 }
 
-.new .basicSlider { width: 620px; }
+.new .basicSlider { max-width: 620px; width:100%; }
 .new .basicSlider img { max-width: 100%; }  
 .new .bgInfo { text-align: left; padding: 100px 0; }
 
@@ -161,9 +150,10 @@
 
 .new .bkProduct{
     display: flex;
-    width: 1450px;
+    max-width: 1450px;
+    width: 100%;
     margin: 0 auto;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .new .blackSlider {width: 620px;}
@@ -296,11 +286,11 @@
 
 .sonyStore .container {
     display: flex;
-    width: 1500px;
+    width: 100%;
     margin: 0 auto;
 }
 
-.sonyStore .left {width: 80%; overflow: hidden; }
+.sonyStore .left {width: 100%; overflow: hidden; }
 
 .sonyStore .right {
     position: relative;
@@ -360,7 +350,7 @@
 }
 
 .product { background-color: #f4f4f4; padding: 100px 0;}
-.product .container { width: 1500px; margin: 0 auto; }
+.product .container { width: 100%; margin: 0 auto; }
 
 .product .container h3 {
     font-size: 49px;
@@ -370,10 +360,10 @@
 }
 
 .product .item { display: flex; }
-.product .item figure { width: 400px; overflow: hidden; border-right: 1px solid #e1e1e1;}
+.product .item figure { width: 25%; overflow: hidden; border-right: 1px solid #e1e1e1;}
 .product .item figure:hover { background-color:#6666ff;}
 
-.product .item img { max-width: 100%;  margin: 70px 0; transform: translateX(40%);}
+.product .item img { margin: 70px 0; transform: translateX(40%);}
 .product .item img:hover { transform: translateX(0); transition: all 0.3s;  }
 
 .product .item a {display: inline-block; margin: 0 30px; font-size: 23px; font-weight: 600; }
@@ -383,7 +373,7 @@
 }
 
 .footer .container {
-    width: 1500px;
+    width: auto;
     margin: 0 auto;
 }
 
@@ -399,7 +389,6 @@
         padding: 80px 0 0 0;
         top: 0;
         left: -100%;
-        width: calc(100% - 90px);
         height: 100vh;
 
         color:#fff;
@@ -455,24 +444,22 @@
     /* New 반응형 */
     .new { position: relative; padding: 0; }
     .new .bgProduct {
-    margin: auto 30px;
-    padding: 20px 0;
-    flex-direction: column;
+        margin: 0 auto;
+        padding: 20px 0;
+        flex-direction: column;
     }
 
-    .new .basicSlider { width: 620px; }
-    .new .basicSlider img { max-width: 70%;}  
+    .new .basicSlider { width: auto; }
+    .new .basicSlider img { width: 100%; }  
     .new .bgInfo { display: block; text-align: left; padding: 50px 0; }
 
     .new .bkProduct{
-        margin: auto 30px;
         padding: 20px 0;
         margin-bottom: 100px;
         flex-direction: column;
     }
 
-    .new .blackSlider {width: 620px;}
-    .new .bkProduct img { max-width: 70%; }
+    .new .blackSlider { width: 100%; }
     .new .bkProduct .bkInfo { position: relative; display: block; text-align: left; padding: 20px 0; }
 
     .new .back {
@@ -492,8 +479,7 @@
     
     .sonyStore .right {
         position: absolute;
-        max-width: 100%;
-        height: 100%;
+        width: 100%;
         left: -8%;
         bottom: -40%;
     }
